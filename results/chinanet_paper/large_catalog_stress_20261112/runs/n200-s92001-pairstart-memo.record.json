@@ -1,0 +1,13 @@
+{
+  "job_id": "n200-s92001-pairstart-memo",
+  "nodes": 200,
+  "actions": 32,
+  "seed": 92001,
+  "method": "PairStart-Memo",
+  "status": "timeout_right_censored",
+  "end_to_end_wall_seconds": 135.05674299999373,
+  "process_cpu_seconds_sampled": 119.0625,
+  "peak_rss_mib_sampled": 46.6328125,
+  "deadline_seconds": 135.0,
+  "worker_return_code": 1
+}

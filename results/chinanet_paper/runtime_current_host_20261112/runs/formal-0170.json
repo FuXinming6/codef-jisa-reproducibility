@@ -1,0 +1,72 @@
+{
+  "instance_id": "hierarchical-50-5608",
+  "family": "hierarchical",
+  "scale": 50,
+  "seed": 5608,
+  "input_path": "inputs/instances/hierarchical-50-5608.json",
+  "input_sha256": "686581f833366bc617c4c8985bb04e715c341452c6841df0a600fc675ea2e3e9",
+  "method": "CoDef",
+  "repeat": 2,
+  "job_id": "formal-0170",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.08385908157590274,
+    "initial_actions": [],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.0,
+        "foothold": "Web-008",
+        "observed_path": [
+          "Ingress-004",
+          "Gateway-008",
+          "Web-008"
+        ],
+        "replanned_path": [],
+        "response_actions": [
+          "D12"
+        ]
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.10721793182373722,
+        "foothold": "API-006",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-002",
+          "API-006"
+        ],
+        "replanned_path": [
+          "API-006",
+          "Service-008",
+          "Database-009"
+        ],
+        "response_actions": [
+          "D07"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.0,
+        "foothold": "Web-008",
+        "observed_path": [
+          "Ingress-004",
+          "Gateway-008",
+          "Web-008"
+        ],
+        "replanned_path": [],
+        "response_actions": [
+          "D12"
+        ]
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 0.9402637,
+  "process_cpu_seconds": 0.921875,
+  "worker_pid": 8520,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

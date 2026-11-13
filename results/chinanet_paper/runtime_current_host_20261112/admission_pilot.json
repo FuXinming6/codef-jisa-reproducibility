@@ -1,0 +1,50 @@
+{
+  "phase": "pilot",
+  "host": "LAPTOP-80F8KDUD",
+  "cpu_model": "Intel(R) Core(TM) i7-14700HX",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "dependencies": {
+    "networkx": "3.6.1",
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2"
+  },
+  "logical_cpu": 2,
+  "power_plugged": true,
+  "cpu_busy_percent_before_phase": 13.9,
+  "memory_load_percent": 81.8,
+  "available_memory_bytes": 6182887424,
+  "thermal_monitoring": false,
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d",
+  "source_hashes": {
+    "experiments/run_chinanet_paper_benchmark.py": "dd86babbd2793b71d9beaf7ea21653c206d93d2143fd4a7613d4241bbd5487b4",
+    "experiments/chinanet_paper_protocol.py": "28b675197b24f42e361e97b88690599b3f58ae328dd44bbf9280a73f168208a8",
+    "src/optimizer/attacker_uncertainty.py": "de854a4a89120fff1428c87f11e83087a85a0f66b787fd3d55e43de9c8aa45d2",
+    "src/optimizer/codef.py": "cf452958a47162b935c47d3f26d51857ddeaa99354e5391fe0cff46dd11dd71d",
+    "src/optimizer/baselines.py": "4037c21f7ccba9f7f1a7e0014e6c3099f73a15b7f8055a7e09c085d246bc1129",
+    "src/optimizer/two_stage.py": "a4a79a52b7d9865b4f5b3f05efcabecefd9f317b04b1cf2aba8848f28339cfa7",
+    "src/graph/path_search.py": "b4256dfe26f1ad4bf65168a7738c55a09d21b10a0a035b8d998824c24b353bc3",
+    "src/risk/network_risk.py": "adfa7724624146249c2c6275f4f64df6c3739a2651e871e59e8667ce3d01abda",
+    "src/defense/apply_defense.py": "950e579d17bc3847dcdea9286a5dcc53ddc4d039e39bec5156e8e881d86d466b"
+  },
+  "input_sha256": {
+    "er_dag-50-5201.json": "b11ff95b806651f7528665bd437defc5d3d1c4c12b81f5bb0db10fa3e6a017dc",
+    "er_dag-50-5349.json": "c32c3f4e918ee59debad2da6cc1adb6e07ff73a5241f2ae7f26e6de1b63aff1b",
+    "er_dag-50-5497.json": "4bad6064a46aba08328b03c97542068263495454396d09afdfc130555650c21b",
+    "er_dag-50-5608.json": "6b8b582bb6fce254214319886c62b8fcd9ea2f7b096778efbfec17cf6490d346",
+    "er_dag-50-5756.json": "8fc49b3edf4595a85b6ece55d7ea250606530e10f6a0152c7fc1a834f8ca9ec0",
+    "er_dag-50-5904.json": "9743b16a62a7e5f31dc05a50354ce8925c9015f49823d9731aef351b1221ab19",
+    "hierarchical-50-5201.json": "8a6ce3f88167c54cc4e8b0af87e53e271248595766c81e050e519dce872ff77d",
+    "hierarchical-50-5349.json": "f2219bba59f5237a3dd0d7d386471dac2d56cc8452c811791949c48e8661e3fe",
+    "hierarchical-50-5497.json": "ba1fa4b6ef98625ce561defe5d9fcc2a1faca0f1185151da3ca4fc2415795198",
+    "hierarchical-50-5608.json": "686581f833366bc617c4c8985bb04e715c341452c6841df0a600fc675ea2e3e9",
+    "hierarchical-50-5756.json": "49233309fa7f41f7e31d46d0d631fe2eb257fc2714aa7c9625e184ddf1c9d0e6",
+    "hierarchical-50-5904.json": "2376eeb9dafe6ef05ecf9840ccb9a0926c2e5d74472ce9c3c01c3c0d00930035",
+    "multipath-50-5201.json": "082d99453c5bac218dbf703d4d17f9fccadce5bf35840013f0d71a030baa0861",
+    "multipath-50-5349.json": "ffee8b8de16d49e54528adac6005f17632a9de39a273ed688770c3b32424fc2f",
+    "multipath-50-5497.json": "6e73c3870c3af10acbe5284eaad394b31c92a782070feae9837d7809ca252a95",
+    "multipath-50-5608.json": "2294f8b62ad3fdf5860db582b386591019663f8e06e16aa7eddd18c86c60fdbb",
+    "multipath-50-5756.json": "4d0cbcb5adcfed437c01ea90f51b715698782135b6018917ceb3f9ccbb2b0e12",
+    "multipath-50-5904.json": "74b9db7cadd30b8990eb9eb0f7e821009114517670d169bfc86be06cd47fad50"
+  }
+}

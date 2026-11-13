@@ -1,0 +1,76 @@
+{
+  "instance_id": "er_dag-50-5904",
+  "family": "er_dag",
+  "scale": 50,
+  "seed": 5904,
+  "input_path": "inputs/instances/er_dag-50-5904.json",
+  "input_sha256": "9743b16a62a7e5f31dc05a50354ce8925c9015f49823d9731aef351b1221ab19",
+  "method": "CoDef",
+  "repeat": 0,
+  "job_id": "formal-0150",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.3128806758410574,
+    "initial_actions": [],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.32976344738173097,
+        "foothold": "Service-007",
+        "observed_path": [
+          "Ingress-002",
+          "Service-006",
+          "Service-007"
+        ],
+        "replanned_path": [
+          "Service-007",
+          "Database-008",
+          "Database-009"
+        ],
+        "response_actions": [
+          "D06",
+          "D08"
+        ]
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.0,
+        "foothold": "Service-005",
+        "observed_path": [
+          "Ingress-001",
+          "Service-005"
+        ],
+        "replanned_path": [],
+        "response_actions": [
+          "D12"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.32976344738173097,
+        "foothold": "Service-007",
+        "observed_path": [
+          "Ingress-002",
+          "Service-006",
+          "Service-007"
+        ],
+        "replanned_path": [
+          "Service-007",
+          "Database-008",
+          "Database-009"
+        ],
+        "response_actions": [
+          "D06"
+        ]
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 2.1121038,
+  "process_cpu_seconds": 2.078125,
+  "worker_pid": 28548,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

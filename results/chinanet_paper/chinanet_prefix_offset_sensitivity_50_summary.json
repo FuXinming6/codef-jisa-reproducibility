@@ -1,0 +1,155 @@
+{
+  "protocol": {
+    "unit": "graph",
+    "graphs": 60,
+    "methods": [
+      "CoDef",
+      "PairStart-Greedy"
+    ],
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "offsets_in_edges": [
+      -1,
+      0,
+      1
+    ],
+    "initial_portfolios": "held fixed from the primary benchmark",
+    "response_and_attacker_continuation": "recomputed at each shifted prefix",
+    "interpretation": "fixed-policy observation-timing sensitivity; not a detector false-positive or probabilistic-noise model",
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261112
+  },
+  "overall": {
+    "-1": {
+      "graphs": 60,
+      "codef_lower_tied_higher": [
+        2,
+        54,
+        4
+      ],
+      "mean_delta_codef_minus_pairstart": 0.0018207507368506557,
+      "mean_delta_ci_95_graph_bootstrap": [
+        -0.0021912601670021218,
+        0.006234696842972147
+      ]
+    },
+    "0": {
+      "graphs": 60,
+      "codef_lower_tied_higher": [
+        2,
+        57,
+        1
+      ],
+      "mean_delta_codef_minus_pairstart": -0.003099861667764785,
+      "mean_delta_ci_95_graph_bootstrap": [
+        -0.009754198557357522,
+        0.0005519429688709891
+      ]
+    },
+    "1": {
+      "graphs": 60,
+      "codef_lower_tied_higher": [
+        1,
+        56,
+        3
+      ],
+      "mean_delta_codef_minus_pairstart": 0.0006117928081008787,
+      "mean_delta_ci_95_graph_bootstrap": [
+        -0.001609190140012844,
+        0.0028921534198905956
+      ]
+    }
+  },
+  "families": {
+    "-1": {
+      "er_dag": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          2,
+          18,
+          0
+        ],
+        "mean_delta_codef_minus_pairstart": -0.00414943803300206
+      },
+      "hierarchical": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          0,
+          18,
+          2
+        ],
+        "mean_delta_codef_minus_pairstart": 0.0063131692210844055
+      },
+      "multipath": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          0,
+          18,
+          2
+        ],
+        "mean_delta_codef_minus_pairstart": 0.003298521022469622
+      }
+    },
+    "0": {
+      "er_dag": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          0,
+          20,
+          0
+        ],
+        "mean_delta_codef_minus_pairstart": 0.0
+      },
+      "hierarchical": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          1,
+          19,
+          0
+        ],
+        "mean_delta_codef_minus_pairstart": -0.0005599513488649767
+      },
+      "multipath": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          1,
+          18,
+          1
+        ],
+        "mean_delta_codef_minus_pairstart": -0.008739633654429379
+      }
+    },
+    "1": {
+      "er_dag": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          0,
+          19,
+          1
+        ],
+        "mean_delta_codef_minus_pairstart": 0.0005261540804172383
+      },
+      "hierarchical": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          0,
+          19,
+          1
+        ],
+        "mean_delta_codef_minus_pairstart": 0.002183399513691891
+      },
+      "multipath": {
+        "graphs": 20,
+        "codef_lower_tied_higher": [
+          1,
+          18,
+          1
+        ],
+        "mean_delta_codef_minus_pairstart": -0.0008741751698064931
+      }
+    }
+  }
+}

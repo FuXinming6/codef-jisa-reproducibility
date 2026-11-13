@@ -1,0 +1,181 @@
+{
+  "protocol": {
+    "created_utc": "2026-11-12T05:06:10Z",
+    "date_local": "2026-11-12",
+    "family": "hierarchical",
+    "seeds": [
+      92001,
+      92038
+    ],
+    "scales_nodes_actions": {
+      "200": 32,
+      "1000": 100
+    },
+    "methods": [
+      "CoDef-W2",
+      "PairStart-Memo"
+    ],
+    "budget_initial_reserve": [
+      4.0,
+      4.0
+    ],
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "path_cap": 4,
+    "response_pool_mode": "adaptive_diverse",
+    "response_pool_base_max": [
+      2,
+      4
+    ],
+    "catalog": {
+      "ranking": "descending directed total degree, stable node/edge identifier tie-break",
+      "mix_32": {
+        "node_hardening": 13,
+        "edge_restriction": 10,
+        "node_isolation": 9
+      },
+      "mix_100": {
+        "node_hardening": 40,
+        "edge_restriction": 30,
+        "node_isolation": 30
+      },
+      "cost_by_type": {
+        "node_hardening": 1,
+        "edge_restriction": 2,
+        "node_isolation": 3
+      },
+      "effects": "deterministic rank cycles; see build_catalog()",
+      "isolation_constraint": "at most one selected isolation action in each stage",
+      "all_security_attributes_and_actions_synthetic": true
+    },
+    "deadline_seconds_end_to_end": 135.0,
+    "measurement_window": "fresh Python worker startup through deterministic instance generation, action catalog construction, solver, and result-file validation; parent samples RSS every 0.1 s; timeout is right-censored",
+    "cpu_affinity": 0,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "records": [
+    {
+      "job_id": "n1000-s92001-codef-w2",
+      "nodes": 1000,
+      "actions": 100,
+      "seed": 92001,
+      "method": "CoDef-W2",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.10359850000532,
+      "process_cpu_seconds_sampled": 121.1875,
+      "peak_rss_mib_sampled": 51.69921875,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    },
+    {
+      "job_id": "n1000-s92001-pairstart-memo",
+      "nodes": 1000,
+      "actions": 100,
+      "seed": 92001,
+      "method": "PairStart-Memo",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.08625459999894,
+      "process_cpu_seconds_sampled": 119.9375,
+      "peak_rss_mib_sampled": 53.765625,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    },
+    {
+      "job_id": "n1000-s92038-codef-w2",
+      "nodes": 1000,
+      "actions": 100,
+      "seed": 92038,
+      "method": "CoDef-W2",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.0532305000088,
+      "process_cpu_seconds_sampled": 118.359375,
+      "peak_rss_mib_sampled": 52.1796875,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    },
+    {
+      "job_id": "n1000-s92038-pairstart-memo",
+      "nodes": 1000,
+      "actions": 100,
+      "seed": 92038,
+      "method": "PairStart-Memo",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.04397639998933,
+      "process_cpu_seconds_sampled": 119.53125,
+      "peak_rss_mib_sampled": 54.12109375,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    },
+    {
+      "job_id": "n200-s92001-codef-w2",
+      "nodes": 200,
+      "actions": 32,
+      "seed": 92001,
+      "method": "CoDef-W2",
+      "status": "completed",
+      "end_to_end_wall_seconds": 33.21306539999205,
+      "process_cpu_seconds_sampled": 28.6875,
+      "peak_rss_mib_sampled": 56.0390625,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 0,
+      "solver_wall_seconds": 32.1438348,
+      "worker_solver_cpu_seconds": 28.046875,
+      "objective": 0.26770483676478457,
+      "initial_actions": [
+        "E001"
+      ],
+      "worker_evidence_file": "n200-s92001-codef-w2.json"
+    },
+    {
+      "job_id": "n200-s92001-pairstart-memo",
+      "nodes": 200,
+      "actions": 32,
+      "seed": 92001,
+      "method": "PairStart-Memo",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.05674299999373,
+      "process_cpu_seconds_sampled": 119.0625,
+      "peak_rss_mib_sampled": 46.6328125,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    },
+    {
+      "job_id": "n200-s92038-codef-w2",
+      "nodes": 200,
+      "actions": 32,
+      "seed": 92038,
+      "method": "CoDef-W2",
+      "status": "completed",
+      "end_to_end_wall_seconds": 47.286718300005305,
+      "process_cpu_seconds_sampled": 41.640625,
+      "peak_rss_mib_sampled": 55.22265625,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 0,
+      "solver_wall_seconds": 46.241835,
+      "worker_solver_cpu_seconds": 40.984375,
+      "objective": 0.1920572236927896,
+      "initial_actions": [
+        "H007",
+        "H011"
+      ],
+      "worker_evidence_file": "n200-s92038-codef-w2.json"
+    },
+    {
+      "job_id": "n200-s92038-pairstart-memo",
+      "nodes": 200,
+      "actions": 32,
+      "seed": 92038,
+      "method": "PairStart-Memo",
+      "status": "timeout_right_censored",
+      "end_to_end_wall_seconds": 135.09230299999763,
+      "process_cpu_seconds_sampled": 121.015625,
+      "peak_rss_mib_sampled": 46.55859375,
+      "deadline_seconds": 135.0,
+      "worker_return_code": 1
+    }
+  ]
+}

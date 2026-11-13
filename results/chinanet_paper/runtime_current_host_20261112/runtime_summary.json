@@ -1,0 +1,55 @@
+{
+  "formal_calls": 180,
+  "historical_semantic_matches": 180,
+  "historical_semantic_mismatches": [],
+  "graph_rows": 18,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 2026100502,
+  "correction": "Holm across the two overall metrics",
+  "summary": [
+    {
+      "metric": "wall_seconds",
+      "graphs": 18,
+      "repetitions_per_method_graph": 5,
+      "codef_faster_tied_slower": [
+        18,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -5.4099982777777775,
+      "mean_delta_ci_95": [
+        -8.344053501944444,
+        -2.9175784602777783
+      ],
+      "geometric_pairstart_over_codef": 2.623201946801546,
+      "geometric_ratio_ci_95": [
+        2.384833212162718,
+        2.8938789356373356
+      ],
+      "raw_sign_p": 7.62939453125e-06,
+      "holm_p_two_metrics": 1.52587890625e-05
+    },
+    {
+      "metric": "process_cpu_seconds",
+      "graphs": 18,
+      "repetitions_per_method_graph": 5,
+      "codef_faster_tied_slower": [
+        18,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -5.128472222222222,
+      "mean_delta_ci_95": [
+        -7.882877604166667,
+        -2.776019965277778
+      ],
+      "geometric_pairstart_over_codef": 2.6091993539172047,
+      "geometric_ratio_ci_95": [
+        2.369497019107836,
+        2.8765407112225625
+      ],
+      "raw_sign_p": 7.62939453125e-06,
+      "holm_p_two_metrics": 1.52587890625e-05
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "experiment": "jisa_parameter_sensitivity_v1",
+  "objective": "Characterize sensitivity of the CoDef/PairStart comparison to local perturbations of synthetic model attributes.",
+  "design_frozen_before_execution": true,
+  "sampling_unit": "The 60 fixed graph-seed instances in chinanet_main_50_20seed_runs.csv; no new topology samples.",
+  "families": [
+    "er_dag",
+    "hierarchical",
+    "multipath"
+  ],
+  "seeds": [
+    5201,
+    5238,
+    5275,
+    5312,
+    5349,
+    5386,
+    5423,
+    5460,
+    5497,
+    5534,
+    5571,
+    5608,
+    5645,
+    5682,
+    5719,
+    5756,
+    5793,
+    5830,
+    5867,
+    5904
+  ],
+  "scale": 50,
+  "conditions": [
+    "base",
+    "cost_only",
+    "effect_only",
+    "asset_only",
+    "joint"
+  ],
+  "methods": [
+    "CoDef",
+    "PairStart-Greedy"
+  ],
+  "perturbation": {
+    "type": "Independent deterministic multiplicative factors uniformly sampled on [0.85, 1.15] per instance and attribute.",
+    "costs": "All 12 initial/response action costs are multiplied by their condition-specific factors; budgets remain 4.0/4.0.",
+    "effects": "Only node-hardening and edge-restriction probabilities are multiplied; values are capped at 1.0. Node-isolation removes adjacent edges and its effect field is not used by the simulator, so isolation effects are held fixed.",
+    "asset_values": "Every non-ingress node asset value is multiplied by an independent factor; topology, critical labels, and edge risks stay fixed.",
+    "seeds": "Each factor stream is seeded by SHA-256 of experiment/family/primary-seed/condition/attribute.",
+    "interpretation": "A model-parameter sensitivity probe, not empirical uncertainty, calibration, or independent replication."
+  },
+  "evaluator": {
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "initial_budget": 4.0,
+    "reserve_budget": 4.0,
+    "phase_one_path_cap": 4,
+    "response_pool_base": 2,
+    "response_pool_mode": "adaptive_diverse",
+    "beam_width": 2,
+    "constraints": "At most one node-isolation action jointly across initial and response actions.",
+    "tie_tolerance": 1e-12
+  },
+  "analysis": "Descriptive paired deltas, lower/tied/higher counts, and within-method objective changes from base; no confirmatory p-values.",
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\lenovo\\anaconda3\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "networkx": "3.3",
+    "pyyaml": "6.0.2"
+  },
+  "git": {
+    "head": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d",
+    "status_porcelain": "M experiments/run_chinanet_public_topology_benchmark.py\n M literature/autoscholarloop_two_stage_defense/00_field_context/checkpoint_state.md\n M literature/autoscholarloop_two_stage_defense/00_field_context/progress_index.md\n M literature/autoscholarloop_two_stage_defense/01_decision/executor_brief.md\n M literature/autoscholarloop_two_stage_defense/02_execution/S02_R01_execution.md\n M literature/autoscholarloop_two_stage_defense/02_execution/S02_R01_review_memo.md\n M requirements.txt\n M results/chinanet_paper/chinanet_public_topology_30seed_runs.csv\n M src/defense/apply_defense.py\n M src/graph/path_search.py\n M src/optimizer/attacker_uncertainty.py\n M src/optimizer/baselines.py\n M src/optimizer/two_stage.py\n M src/risk/network_risk.py\n?? deliveries/\n?? experiments/render_jisa_seed5682_trace_figure.py\n?? experiments/run_budget_split_stability.py\n?? experiments/run_contextual_budget_policy.py\n?? experiments/run_jisa_large_catalog_stress.py\n?? experiments/run_jisa_parameter_sensitivity.py\n?? experiments/run_jisa_pool_fixed_policy_sensitivity.py\n?? experiments/run_jisa_runtime_repeat.py\n?? experiments/run_jisa_seed5682_trace.py\n?? experiments/run_jisa_static_beam_ablation.py\n?? experiments/run_prefix_offset_sensitivity.py\n?? experiments/summarize_jisa_runtime_repeat.py\n?? literature/autoscholarloop_two_stage_defense/01_decision/S01_R13_adaptive_budget_handoff.md\n?? literature/autoscholarloop_two_stage_defense/02_execution/S02_R06_execution.md\n?? literature/autoscholarloop_two_stage_defense/02_execution/S02_R06_review_memo.md\n?? literature/autoscholarloop_two_stage_defense/source_papers/02_wan_2022_foureye_hypergame.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/03_sayed_2023_dynamic_tactical_honeypot_gamesec.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/04_ma_2023_proactive_deception_attack_graph_gamesec.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/05_bhuiyan_2021_risk_averse_attack_graph_interdiction_preprint.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/06_ling_2026_layered_defenses_adaptive_adversaries_aaai.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/07_nguyen_2018_multistage_attack_graph_security_games.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/08_tan_2026_series_parallel_attack_graph_adaptive_attackers_arxiv.pdf\n?? literature/autoscholarloop_two_stage_defense/source_papers/09_park_2025_adaptive_honeypot_bayesian_stackelberg_arxiv.pdf\n?? results/chinanet_paper/budget_split_stability_r02.csv\n?? results/chinanet_paper/budget_split_stability_r02_deterministic.csv\n?? results/chinanet_paper/budget_split_stability_r02_deterministic_summary.csv\n?? results/chinanet_paper/budget_split_stability_r02_summary.csv\n?? results/chinanet_paper/budget_split_stability_smoke.csv\n?? results/chinanet_paper/budget_split_stability_smoke_summary.csv\n?? results/chinanet_paper/chinanet_ablation_50_hier13_20260929_runs.csv\n?? results/chinanet_paper/chinanet_ablation_50_last2_20260929_runs.csv\n?? results/chinanet_paper/chinanet_ablation_50_main20_20260928_runs.PARTIAL.csv\n?? results/chinanet_paper/chinanet_ablation_50_multipath13_20260929_runs.csv\n?? results/chinanet_paper/chinanet_ablation_50_new15_20260929_runs.csv\n?? results/chinanet_paper/chinanet_prefix_offset_sensitivity_50_runs.csv\n?? results/chinanet_paper/chinanet_prefix_offset_sensitivity_50_summary.json\n?? results/chinanet_paper/codef_static_beam_ablation_60_20261112.csv\n?? results/chinanet_paper/codef_static_beam_ablation_60_20261112_summary.json\n?? results/chinanet_paper/contextual_budget_hash0_a_runs.csv\n?? results/chinanet_paper/contextual_budget_hash0_a_summary.csv\n?? results/chinanet_paper/contextual_budget_hash0_b_runs.csv\n?? results/chinanet_paper/contextual_budget_hash0_b_summary.csv\n?? results/chinanet_paper/contextual_budget_pilot_codex_runs.csv\n?? results/chinanet_paper/contextual_budget_pilot_codex_summary.csv\n?? results/chinanet_paper/contextual_budget_r02_deterministic_runs.csv\n?? results/chinanet_paper/contextual_budget_r02_deterministic_summary.csv\n?? results/chinanet_paper/contextual_budget_smoke_codex_runs.csv\n?? results/chinanet_paper/contextual_budget_smoke_codex_summary.csv\n?? results/chinanet_paper/contextual_budget_smoke_runs.csv\n?? results/chinanet_paper/contextual_budget_smoke_summary.csv\n?? results/chinanet_paper/jisa_seed5682_trace_20261112.json\n?? results/chinanet_paper/large_catalog_stress_20261112/\n?? results/chinanet_paper/pool_fixed_policy_sensitivity_12_20261112.csv\n?? results/chinanet_paper/pool_fixed_policy_sensitivity_12_20261112_summary.json\n?? results/chinanet_paper/runtime_current_host_20261112/\n?? results/chinanet_paper/v29_multiround_baselines_seed6433_20260930.csv\n?? results/chinanet_paper/v29_multiround_baselines_seed6449_20260930.csv\n?? results/chinanet_paper/v29_multiround_baselines_seed6461_20260930.csv\n?? results/chinanet_paper/v29_multiround_baselines_seed6473_20260930.csv\n?? results/chinanet_paper/v29_multiround_baselines_seed6481_20260930.csv\n?? results/chinanet_paper/v29_multiround_budget_profile_seed6433_20260930.csv\n?? results/chinanet_paper/v29_multiround_budget_profile_seed6449_20260930.csv\n?? results/chinanet_paper/v29_multiround_budget_profile_seed6461_20260930.csv\n?? results/chinanet_paper/v29_multiround_budget_profile_seed6473_20260930.csv\n?? results/chinanet_paper/v29_multiround_budget_profile_seed6481_20260930.csv\n?? results/chinanet_paper/v29_topology_hierarchical_seed6433_20260930.csv\n?? results/chinanet_paper/v29_topology_hierarchical_seed6449_20260930.csv\n?? results/chinanet_paper/v29_topology_hierarchical_seed6461_20260930.csv\n?? results/chinanet_paper/v29_topology_hierarchical_seed6473_20260930.csv\n?? results/chinanet_paper/v29_topology_hierarchical_seed6481_20260930.csv\n?? results/chinanet_paper/v29_topology_multipath_seed6433_20260930.csv\n?? results/chinanet_paper/v29_topology_multipath_seed6449_20260930.csv\n?? results/chinanet_paper/v29_topology_multipath_seed6461_20260930.csv\n?? results/chinanet_paper/v29_topology_multipath_seed6473_20260930.csv\n?? results/chinanet_paper/v29_topology_multipath_seed6481_20260930.csv\n?? src/optimizer/contextual_budget.py\n?? tests/test_contextual_budget.py\n?? tests/test_deterministic_budget_search.py"
+  },
+  "source_sha256": {
+    "experiments\\run_jisa_parameter_sensitivity.py": "6a042d73d50b1dfeea682254b2492bec4fad08ca6c6d34b155a064c7fdb10c71",
+    "experiments\\chinanet_paper_protocol.py": "28b675197b24f42e361e97b88690599b3f58ae328dd44bbf9280a73f168208a8",
+    "src\\optimizer\\attacker_uncertainty.py": "4e7282727e14b4abb3ce62f3316c23f98e05485430af618504f64ea407168f49",
+    "src\\defense\\apply_defense.py": "950e579d17bc3847dcdea9286a5dcc53ddc4d039e39bec5156e8e881d86d466b",
+    "src\\defense\\action.py": "8fe488530ee227b5629a355d36c53f163f68ab5c95c1a66d3efc00f88b81d47d",
+    "src\\defense\\constraints.py": "eeae860a713f6a463170a8cb0a368062b4a8c2834f559c5b5aadac380e8ccb71",
+    "src\\simulator\\scenario_variation.py": "7fabb171e7af6cb5c506aec41d6be63901da19b91f4e1b83a3723ac19c93896c",
+    "results\\chinanet_paper\\chinanet_main_50_20seed_runs.csv": "602b307c7c820ce8c06a7b08c53f30a080aa378bbb36d605d52799976d25b5a7"
+  },
+  "output_dir": "D:\\CyberTwin-CoDef-paper-chinanet\\results\\chinanet_paper\\cost_effect_value_sensitivity_20261112"
+}

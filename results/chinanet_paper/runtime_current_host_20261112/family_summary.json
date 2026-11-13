@@ -1,0 +1,103 @@
+{
+  "descriptive_only": true,
+  "bootstrap_draws": 10000,
+  "base_seed": 2026100502,
+  "results": [
+    {
+      "family": "er_dag",
+      "metric": "wall_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 2.2626518038558188,
+      "pointwise_graph_bootstrap_ci_95": [
+        1.9803493526870606,
+        2.5997652840954775
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -1.7630585000000003
+    },
+    {
+      "family": "er_dag",
+      "metric": "process_cpu_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 2.2502364688866026,
+      "pointwise_graph_bootstrap_ci_95": [
+        1.9523124216094119,
+        2.6145581479048485
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -1.6770833333333333
+    },
+    {
+      "family": "hierarchical",
+      "metric": "wall_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 2.5583568454066175,
+      "pointwise_graph_bootstrap_ci_95": [
+        2.2776919089938925,
+        2.789838357413164
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -1.1108845333333333
+    },
+    {
+      "family": "hierarchical",
+      "metric": "process_cpu_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 2.546041819244182,
+      "pointwise_graph_bootstrap_ci_95": [
+        2.2807748467614557,
+        2.784337096232873
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -1.078125
+    },
+    {
+      "family": "multipath",
+      "metric": "wall_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 3.118288772390875,
+      "pointwise_graph_bootstrap_ci_95": [
+        2.722586669238672,
+        3.5877201440605484
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -13.356051800000001
+    },
+    {
+      "family": "multipath",
+      "metric": "process_cpu_seconds",
+      "graphs": 6,
+      "geometric_pairstart_over_codef": 3.100474010830054,
+      "pointwise_graph_bootstrap_ci_95": [
+        2.73687076730044,
+        3.5403857725297656
+      ],
+      "codef_faster_tied_slower": [
+        6,
+        0,
+        0
+      ],
+      "mean_codef_minus_pairstart_seconds": -12.630208333333334
+    }
+  ]
+}

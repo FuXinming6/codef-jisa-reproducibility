@@ -1,0 +1,7 @@
+{
+  "job_id": "n1000-s92001-pairstart-memo",
+  "nodes": 1000,
+  "actions": 100,
+  "seed": 92001,
+  "method": "PairStart-Memo"
+}

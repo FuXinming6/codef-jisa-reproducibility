@@ -1,0 +1,12 @@
+{
+  "instance_id": "multipath-50-5349",
+  "family": "multipath",
+  "scale": 50,
+  "seed": 5349,
+  "input_path": "inputs/instances/multipath-50-5349.json",
+  "input_sha256": "ffee8b8de16d49e54528adac6005f17632a9de39a273ed688770c3b32424fc2f",
+  "method": "PairStart-Greedy",
+  "repeat": 4,
+  "job_id": "formal-0128",
+  "mode": "formal"
+}

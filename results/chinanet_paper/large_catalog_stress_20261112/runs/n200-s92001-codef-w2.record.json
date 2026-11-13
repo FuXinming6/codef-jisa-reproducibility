@@ -1,0 +1,20 @@
+{
+  "job_id": "n200-s92001-codef-w2",
+  "nodes": 200,
+  "actions": 32,
+  "seed": 92001,
+  "method": "CoDef-W2",
+  "status": "completed",
+  "end_to_end_wall_seconds": 33.21306539999205,
+  "process_cpu_seconds_sampled": 28.6875,
+  "peak_rss_mib_sampled": 56.0390625,
+  "deadline_seconds": 135.0,
+  "worker_return_code": 0,
+  "solver_wall_seconds": 32.1438348,
+  "worker_solver_cpu_seconds": 28.046875,
+  "objective": 0.26770483676478457,
+  "initial_actions": [
+    "E001"
+  ],
+  "worker_evidence_file": "n200-s92001-codef-w2.json"
+}

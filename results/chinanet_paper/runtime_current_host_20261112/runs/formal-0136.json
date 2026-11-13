@@ -1,0 +1,78 @@
+{
+  "instance_id": "multipath-50-5201",
+  "family": "multipath",
+  "scale": 50,
+  "seed": 5201,
+  "input_path": "inputs/instances/multipath-50-5201.json",
+  "input_sha256": "082d99453c5bac218dbf703d4d17f9fccadce5bf35840013f0d71a030baa0861",
+  "method": "CoDef",
+  "repeat": 0,
+  "job_id": "formal-0136",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.21237803112407982,
+    "initial_actions": [
+      "D02",
+      "D03",
+      "D08"
+    ],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.22383776659699647,
+        "foothold": "Web-007",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-007",
+          "Web-007"
+        ],
+        "replanned_path": [
+          "Web-007",
+          "API-007",
+          "Service-004",
+          "Database-010"
+        ],
+        "response_actions": []
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.0,
+        "foothold": "Web-005",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-006",
+          "Web-005"
+        ],
+        "replanned_path": [],
+        "response_actions": [
+          "D10"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.22383776659699647,
+        "foothold": "Web-007",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-007",
+          "Web-007"
+        ],
+        "replanned_path": [
+          "Web-007",
+          "API-007",
+          "Service-004",
+          "Database-010"
+        ],
+        "response_actions": []
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 6.7616414,
+  "process_cpu_seconds": 6.5,
+  "worker_pid": 20264,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

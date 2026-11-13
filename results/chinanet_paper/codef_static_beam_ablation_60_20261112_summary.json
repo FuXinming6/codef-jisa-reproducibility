@@ -1,0 +1,409 @@
+{
+  "protocol": {
+    "graphs": 60,
+    "families": [
+      "er_dag",
+      "hierarchical",
+      "multipath"
+    ],
+    "seeds": [
+      5201,
+      5238,
+      5275,
+      5312,
+      5349,
+      5386,
+      5423,
+      5460,
+      5497,
+      5534,
+      5571,
+      5608,
+      5645,
+      5682,
+      5719,
+      5756,
+      5793,
+      5830,
+      5867,
+      5904
+    ],
+    "scale": 50,
+    "actions": 12,
+    "budgets": [
+      4.0,
+      4.0
+    ],
+    "path_cap": 4,
+    "adaptive_response_pool_base": 2,
+    "adaptive_response_pool_max": 4,
+    "beam_width": 2,
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "objective": "shared mean/worst/sample-SD terminal risk; default weights",
+    "contrast": "Static-CoDef changes only beam-truncation ranking to static network-risk score; all final candidates are compared by shared response-aware objective",
+    "tie_tolerance": 1e-12,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 911202611,
+    "inference": "exploratory; all-graph pooled sign test and CI primary; family strata descriptive",
+    "worktree_git_head": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d",
+    "source_sha256": {
+      "experiments/run_jisa_static_beam_ablation.py": "c9ef65b3b0116605904d666617a80207c5e5b86caf93aaf99e10cae9bfa0aeb3",
+      "experiments/chinanet_paper_protocol.py": "28b675197b24f42e361e97b88690599b3f58ae328dd44bbf9280a73f168208a8",
+      "src/optimizer/attacker_uncertainty.py": "4e7282727e14b4abb3ce62f3316c23f98e05485430af618504f64ea407168f49",
+      "src/optimizer/two_stage.py": "170b907e8edefb142cdeb8380685c0682fe41cdf08093f8ba7e810f32590cdee",
+      "src/graph/path_search.py": "b4256dfe26f1ad4bf65168a7738c55a09d21b10a0a035b8d998824c24b353bc3",
+      "src/risk/network_risk.py": "adfa7724624146249c2c6275f4f64df6c3739a2651e871e59e8667ce3d01abda",
+      "src/defense/apply_defense.py": "950e579d17bc3847dcdea9286a5dcc53ddc4d039e39bec5156e8e881d86d466b"
+    }
+  },
+  "overall": {
+    "graphs": 60,
+    "mean_delta_static_minus_full": 0.005563325240093129,
+    "median_delta_static_minus_full": 0.0,
+    "static_lower_tied_higher": [
+      0,
+      52,
+      8
+    ],
+    "exact_sign_p_two_sided": 0.0078125,
+    "paired_graph_bootstrap_95_ci": [
+      0.0003719926461806332,
+      0.012700740252798657
+    ]
+  },
+  "families_descriptive": {
+    "er_dag": {
+      "graphs": 20,
+      "mean_delta_static_minus_full": 0.00027003477683547816,
+      "static_lower_tied_higher": [
+        0,
+        19,
+        1
+      ]
+    },
+    "hierarchical": {
+      "graphs": 20,
+      "mean_delta_static_minus_full": 0.0032481382650559167,
+      "static_lower_tied_higher": [
+        0,
+        19,
+        1
+      ]
+    },
+    "multipath": {
+      "graphs": 20,
+      "mean_delta_static_minus_full": 0.01317180267838799,
+      "static_lower_tied_higher": [
+        0,
+        14,
+        6
+      ]
+    }
+  },
+  "per_graph": [
+    {
+      "family": "er_dag",
+      "seed": 5201,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5238,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5275,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5312,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5349,
+      "delta_static_minus_full": 0.005400695536709563
+    },
+    {
+      "family": "er_dag",
+      "seed": 5386,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5423,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5460,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5497,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5534,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5571,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5608,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5645,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5682,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5719,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5756,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5793,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5830,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5867,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "er_dag",
+      "seed": 5904,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5201,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5238,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5275,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5312,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5349,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5386,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5423,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5460,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5497,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5534,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5571,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5608,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5645,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5682,
+      "delta_static_minus_full": 0.06496276530111833
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5719,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5756,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5793,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5830,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5867,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "hierarchical",
+      "seed": 5904,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5201,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5238,
+      "delta_static_minus_full": 0.07411558723754774
+    },
+    {
+      "family": "multipath",
+      "seed": 5275,
+      "delta_static_minus_full": 0.17390858490366334
+    },
+    {
+      "family": "multipath",
+      "seed": 5312,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5349,
+      "delta_static_minus_full": 0.0003721570721572087
+    },
+    {
+      "family": "multipath",
+      "seed": 5386,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5423,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5460,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5497,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5534,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5571,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5608,
+      "delta_static_minus_full": 0.0034538386721446324
+    },
+    {
+      "family": "multipath",
+      "seed": 5645,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5682,
+      "delta_static_minus_full": 0.0006099548894109019
+    },
+    {
+      "family": "multipath",
+      "seed": 5719,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5756,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5793,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5830,
+      "delta_static_minus_full": 0.010975930792835986
+    },
+    {
+      "family": "multipath",
+      "seed": 5867,
+      "delta_static_minus_full": 0.0
+    },
+    {
+      "family": "multipath",
+      "seed": 5904,
+      "delta_static_minus_full": 0.0
+    }
+  ]
+}

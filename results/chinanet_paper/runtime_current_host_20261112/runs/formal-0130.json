@@ -1,0 +1,88 @@
+{
+  "instance_id": "multipath-50-5756",
+  "family": "multipath",
+  "scale": 50,
+  "seed": 5756,
+  "input_path": "inputs/instances/multipath-50-5756.json",
+  "input_sha256": "4d0cbcb5adcfed437c01ea90f51b715698782135b6018917ceb3f9ccbb2b0e12",
+  "method": "CoDef",
+  "repeat": 4,
+  "job_id": "formal-0130",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.12277779826936638,
+    "initial_actions": [
+      "D01",
+      "D08"
+    ],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.10854216987786884,
+        "foothold": "Web-005",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-005"
+        ],
+        "replanned_path": [
+          "Web-005",
+          "API-003",
+          "Service-002",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D02",
+          "D12"
+        ]
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.10854216987786884,
+        "foothold": "Web-005",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-005"
+        ],
+        "replanned_path": [
+          "Web-005",
+          "API-003",
+          "Service-002",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D02",
+          "D12"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.12674311610414177,
+        "foothold": "Web-001",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-001",
+          "Web-001"
+        ],
+        "replanned_path": [
+          "Web-001",
+          "API-004",
+          "Service-003",
+          "Database-009"
+        ],
+        "response_actions": [
+          "D09"
+        ]
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 5.9759406,
+  "process_cpu_seconds": 5.703125,
+  "worker_pid": 65036,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

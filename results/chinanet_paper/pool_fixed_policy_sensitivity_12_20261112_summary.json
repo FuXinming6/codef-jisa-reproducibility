@@ -1,0 +1,94 @@
+{
+  "protocol": {
+    "analysis": "fixed-policy replay: saved initial portfolios are not reoptimized; response and continuation are recomputed",
+    "graphs": 12,
+    "families": [
+      "er_dag",
+      "hierarchical",
+      "multipath"
+    ],
+    "seeds_per_family": [
+      5201,
+      5238,
+      5275,
+      5312
+    ],
+    "methods": [
+      "CoDef",
+      "PairStart-Greedy"
+    ],
+    "configured_adaptive_pool_base_sizes": [
+      2,
+      4,
+      8
+    ],
+    "maximum_pool_size_rule": "base + 2 if the base-th ranked response has positive coverage, capped by eligible actions",
+    "budgets": [
+      4.0,
+      4.0
+    ],
+    "path_cap": 4,
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "tie_tolerance": 1e-12,
+    "bootstrap_draws": 10000,
+    "source_primary_csv": "D:\\CyberTwin-CoDef-paper-chinanet\\results\\chinanet_paper\\chinanet_main_50_20seed_runs.csv",
+    "interpretation_limit": "tests evaluator pool sensitivity for fixed portfolios, not performance after reoptimization"
+  },
+  "by_pool_size": [
+    {
+      "configured_pool_base": 2,
+      "adaptive_pool_maximum": 4,
+      "graphs": 12,
+      "codef_lower_tied_higher": [
+        1,
+        11,
+        0
+      ],
+      "mean_delta_codef_minus_pairstart": -0.015945913512893106,
+      "mean_delta_graph_bootstrap_95_ci": [
+        -0.04783774053867931,
+        0.0
+      ],
+      "exact_sign_p_two_sided": 1.0,
+      "holm_p_across_three_pool_sizes": 1.0
+    },
+    {
+      "configured_pool_base": 4,
+      "adaptive_pool_maximum": 6,
+      "graphs": 12,
+      "codef_lower_tied_higher": [
+        1,
+        11,
+        0
+      ],
+      "mean_delta_codef_minus_pairstart": -0.015945913512893106,
+      "mean_delta_graph_bootstrap_95_ci": [
+        -0.04783774053867931,
+        0.0
+      ],
+      "exact_sign_p_two_sided": 1.0,
+      "holm_p_across_three_pool_sizes": 1.0
+    },
+    {
+      "configured_pool_base": 8,
+      "adaptive_pool_maximum": 10,
+      "graphs": 12,
+      "codef_lower_tied_higher": [
+        1,
+        11,
+        0
+      ],
+      "mean_delta_codef_minus_pairstart": -0.015945913512893106,
+      "mean_delta_graph_bootstrap_95_ci": [
+        -0.04783774053867931,
+        0.0
+      ],
+      "exact_sign_p_two_sided": 1.0,
+      "holm_p_across_three_pool_sizes": 1.0
+    }
+  ]
+}

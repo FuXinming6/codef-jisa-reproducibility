@@ -1,0 +1,199 @@
+{
+  "title": "Supplementary multi-host robustness check",
+  "fixed_before_new_host_measurements": true,
+  "source_commit": "f8a258c29f55c674990ada6cd085c509c1f1dc55",
+  "source_reference_protocol": "12b3de2da8d7df363c8f9a2cce1167e5edef2257318723bfe0878745f0d9570b",
+  "instances": [
+    {
+      "instance_id": "hierarchical-50-5201",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5201,
+      "input_path": "inputs/instances/hierarchical-50-5201.json",
+      "input_sha256": "8a6ce3f88167c54cc4e8b0af87e53e271248595766c81e050e519dce872ff77d"
+    },
+    {
+      "instance_id": "hierarchical-50-5349",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5349,
+      "input_path": "inputs/instances/hierarchical-50-5349.json",
+      "input_sha256": "f2219bba59f5237a3dd0d7d386471dac2d56cc8452c811791949c48e8661e3fe"
+    },
+    {
+      "instance_id": "hierarchical-50-5497",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5497,
+      "input_path": "inputs/instances/hierarchical-50-5497.json",
+      "input_sha256": "ba1fa4b6ef98625ce561defe5d9fcc2a1faca0f1185151da3ca4fc2415795198"
+    },
+    {
+      "instance_id": "hierarchical-50-5608",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5608,
+      "input_path": "inputs/instances/hierarchical-50-5608.json",
+      "input_sha256": "686581f833366bc617c4c8985bb04e715c341452c6841df0a600fc675ea2e3e9"
+    },
+    {
+      "instance_id": "hierarchical-50-5756",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5756,
+      "input_path": "inputs/instances/hierarchical-50-5756.json",
+      "input_sha256": "49233309fa7f41f7e31d46d0d631fe2eb257fc2714aa7c9625e184ddf1c9d0e6"
+    },
+    {
+      "instance_id": "hierarchical-50-5904",
+      "family": "hierarchical",
+      "scale": 50,
+      "seed": 5904,
+      "input_path": "inputs/instances/hierarchical-50-5904.json",
+      "input_sha256": "2376eeb9dafe6ef05ecf9840ccb9a0926c2e5d74472ce9c3c01c3c0d00930035"
+    },
+    {
+      "instance_id": "er_dag-50-5201",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5201,
+      "input_path": "inputs/instances/er_dag-50-5201.json",
+      "input_sha256": "b11ff95b806651f7528665bd437defc5d3d1c4c12b81f5bb0db10fa3e6a017dc"
+    },
+    {
+      "instance_id": "er_dag-50-5349",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5349,
+      "input_path": "inputs/instances/er_dag-50-5349.json",
+      "input_sha256": "c32c3f4e918ee59debad2da6cc1adb6e07ff73a5241f2ae7f26e6de1b63aff1b"
+    },
+    {
+      "instance_id": "er_dag-50-5497",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5497,
+      "input_path": "inputs/instances/er_dag-50-5497.json",
+      "input_sha256": "4bad6064a46aba08328b03c97542068263495454396d09afdfc130555650c21b"
+    },
+    {
+      "instance_id": "er_dag-50-5608",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5608,
+      "input_path": "inputs/instances/er_dag-50-5608.json",
+      "input_sha256": "6b8b582bb6fce254214319886c62b8fcd9ea2f7b096778efbfec17cf6490d346"
+    },
+    {
+      "instance_id": "er_dag-50-5756",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5756,
+      "input_path": "inputs/instances/er_dag-50-5756.json",
+      "input_sha256": "8fc49b3edf4595a85b6ece55d7ea250606530e10f6a0152c7fc1a834f8ca9ec0"
+    },
+    {
+      "instance_id": "er_dag-50-5904",
+      "family": "er_dag",
+      "scale": 50,
+      "seed": 5904,
+      "input_path": "inputs/instances/er_dag-50-5904.json",
+      "input_sha256": "9743b16a62a7e5f31dc05a50354ce8925c9015f49823d9731aef351b1221ab19"
+    },
+    {
+      "instance_id": "multipath-50-5201",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5201,
+      "input_path": "inputs/instances/multipath-50-5201.json",
+      "input_sha256": "082d99453c5bac218dbf703d4d17f9fccadce5bf35840013f0d71a030baa0861"
+    },
+    {
+      "instance_id": "multipath-50-5349",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5349,
+      "input_path": "inputs/instances/multipath-50-5349.json",
+      "input_sha256": "ffee8b8de16d49e54528adac6005f17632a9de39a273ed688770c3b32424fc2f"
+    },
+    {
+      "instance_id": "multipath-50-5497",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5497,
+      "input_path": "inputs/instances/multipath-50-5497.json",
+      "input_sha256": "6e73c3870c3af10acbe5284eaad394b31c92a782070feae9837d7809ca252a95"
+    },
+    {
+      "instance_id": "multipath-50-5608",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5608,
+      "input_path": "inputs/instances/multipath-50-5608.json",
+      "input_sha256": "2294f8b62ad3fdf5860db582b386591019663f8e06e16aa7eddd18c86c60fdbb"
+    },
+    {
+      "instance_id": "multipath-50-5756",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5756,
+      "input_path": "inputs/instances/multipath-50-5756.json",
+      "input_sha256": "4d0cbcb5adcfed437c01ea90f51b715698782135b6018917ceb3f9ccbb2b0e12"
+    },
+    {
+      "instance_id": "multipath-50-5904",
+      "family": "multipath",
+      "scale": 50,
+      "seed": 5904,
+      "input_path": "inputs/instances/multipath-50-5904.json",
+      "input_sha256": "74b9db7cadd30b8990eb9eb0f7e821009114517670d169bfc86be06cd47fad50"
+    }
+  ],
+  "selection": "50-node primary panel, sorted seeds; zero-based positions [0,4,8,11,15,19] from each of three 20-graph families; no runtime/quality filter",
+  "methods": [
+    "CoDef",
+    "PairStart-Greedy"
+  ],
+  "codef_width": 2,
+  "solver_kwargs": {
+    "initial_budget": 4.0,
+    "reserve_budget": 4.0,
+    "response_pool_size": 2,
+    "max_phase_one_paths": 4,
+    "response_pool_mode": "adaptive_diverse"
+  },
+  "repetitions": 5,
+  "calls_per_host": 180,
+  "pilot_calls_per_host": 6,
+  "schedule_seed": 2026100501,
+  "bootstrap_seed": 2026100502,
+  "bootstrap_draws": 10000,
+  "included_time": "Entire uninstrumented _run_method solver call; includes search and final scoring",
+  "excluded_time": "Process startup, imports, hash checks, affinity, graph reconstruction, observer handshake, output I/O",
+  "primary": "Per-host overall geometric PairStart/CoDef wall-clock ratio on graph-level within-method medians; paired graph bootstrap, sign test, Holm across three completed hosts",
+  "secondary": "Same process CPU analysis, a separate Holm family of three; topology-stratified descriptive summaries",
+  "memory": "External RSS sampled nominally every 20ms using actual worker PID, filtered to solver interval; baseline and lifetime peak separately; sampling may miss brief peaks",
+  "admission": {
+    "available_memory_min_bytes": 3221225472,
+    "memory_percent_max": 80,
+    "cpu_one_second_percent_max": 25,
+    "AC_power_required": true
+  },
+  "affinity": "Fixed one allowed logical CPU on Windows/Linux; macOS affinity unavailable, explicitly recorded; one serial worker on every OS",
+  "dependencies": {
+    "networkx": "3.6.1",
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2"
+  },
+  "python": "native CPython 3.12; exact patch/build recorded",
+  "semantics": "Every objective, initial action list, profile risk, foothold, observed/replanned paths and response action list matches the archived historical record at abs tolerance 1e-12",
+  "stop": "Stop on worker failure, timeout, hash or semantic mismatch. Retain every valid formal call, no performance-based filtering.",
+  "limitations": [
+    "same graphs across hosts, not extra independent networks",
+    "three hosts cannot establish hardware independence or complexity superiority",
+    "no thermal telemetry",
+    "no cross-host absolute-time pooling",
+    "follow-up on already observed graph panel, no new holdout"
+  ],
+  "evidence_status": "No new host formal calls in this execution-material package"
+}

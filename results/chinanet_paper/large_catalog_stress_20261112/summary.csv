@@ -1,0 +1,9 @@
+﻿actions,deadline_seconds,end_to_end_wall_seconds,initial_actions,job_id,method,nodes,objective,peak_rss_mib_sampled,process_cpu_seconds_sampled,seed,solver_wall_seconds,status,worker_evidence_file,worker_return_code,worker_solver_cpu_seconds
+100,135.0,135.10359850000532,,n1000-s92001-codef-w2,CoDef-W2,1000,,51.69921875,121.1875,92001,,timeout_right_censored,,1,
+100,135.0,135.08625459999894,,n1000-s92001-pairstart-memo,PairStart-Memo,1000,,53.765625,119.9375,92001,,timeout_right_censored,,1,
+100,135.0,135.0532305000088,,n1000-s92038-codef-w2,CoDef-W2,1000,,52.1796875,118.359375,92038,,timeout_right_censored,,1,
+100,135.0,135.04397639998933,,n1000-s92038-pairstart-memo,PairStart-Memo,1000,,54.12109375,119.53125,92038,,timeout_right_censored,,1,
+32,135.0,33.21306539999205,"[""E001""]",n200-s92001-codef-w2,CoDef-W2,200,0.26770483676478457,56.0390625,28.6875,92001,32.1438348,completed,n200-s92001-codef-w2.json,0,28.046875
+32,135.0,135.05674299999373,,n200-s92001-pairstart-memo,PairStart-Memo,200,,46.6328125,119.0625,92001,,timeout_right_censored,,1,
+32,135.0,47.286718300005305,"[""H007"", ""H011""]",n200-s92038-codef-w2,CoDef-W2,200,0.1920572236927896,55.22265625,41.640625,92038,46.241835,completed,n200-s92038-codef-w2.json,0,40.984375
+32,135.0,135.09230299999763,,n200-s92038-pairstart-memo,PairStart-Memo,200,,46.55859375,121.015625,92038,,timeout_right_censored,,1,

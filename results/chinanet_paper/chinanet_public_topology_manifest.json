@@ -1,0 +1,56 @@
+{
+  "dataset": "Internet Topology Zoo",
+  "dataset_doi": "https://doi.org/10.25909/30153949.v1",
+  "dataset_license": "CC BY 4.0",
+  "citation": "S. Knight, H. X. Nguyen, N. Falkner, R. Bowden, and M. Roughan, The Internet Topology Zoo, IEEE JSAC 29(9), 2011, doi:10.1109/JSAC.2011.111002.",
+  "topology": "Chinanet",
+  "public_fields_used": [
+    "nodes",
+    "links",
+    "Internal",
+    "label"
+  ],
+  "synthetic_fields": [
+    "edge risk",
+    "asset value",
+    "security role",
+    "critical assets",
+    "defense actions"
+  ],
+  "node_count": 42,
+  "public_link_count": 66,
+  "ingresses": [
+    {
+      "id": "N002",
+      "source_label": "International Link 1"
+    },
+    {
+      "id": "N003",
+      "source_label": "International Link 2"
+    },
+    {
+      "id": "N013",
+      "source_label": "International Link 4"
+    },
+    {
+      "id": "N014",
+      "source_label": "International Link 3"
+    }
+  ],
+  "critical_assets": [
+    {
+      "id": "N010",
+      "source_label": "Xi'an"
+    },
+    {
+      "id": "N032",
+      "source_label": "Tianjin"
+    }
+  ],
+  "reachable_ingress_asset_pairs": 8,
+  "total_ingress_asset_pairs": 8,
+  "orientation_rule": "farther-to-nearer critical; stable-id tie break",
+  "is_dag": true,
+  "risk_seed_count": 30,
+  "statistical_unit": "one complete synthetic risk perturbation on one fixed public structure"
+}

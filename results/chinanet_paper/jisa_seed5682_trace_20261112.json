@@ -1,0 +1,209 @@
+{
+  "protocol": {
+    "family": "hierarchical",
+    "node_count": 50,
+    "seed": 5682,
+    "graph_seed": 64051,
+    "edge_risk_perturbation_seed": 205685,
+    "initial_budget": 4.0,
+    "response_reserve": 4.0,
+    "response_pool_base": 2,
+    "max_phase_one_paths": 4,
+    "response_pool_mode": "adaptive_diverse",
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "objective": "mean + 0.5*(worst-mean) + 0.2*sample_sd",
+    "objective_weights": {
+      "worst_weight": 0.5,
+      "sample_sd_weight": 0.2
+    },
+    "data_status": "deterministic synthetic replay; not a holdout"
+  },
+  "evaluations": [
+    {
+      "label": "CoDef selected start",
+      "initial_actions": [
+        "D02",
+        "D08"
+      ],
+      "initial_cost": 3.0,
+      "static_network_risk": 0.8912416890213847,
+      "objective_J": 0.08419876802067464,
+      "mean_terminal_risk": 0.08419876802067464,
+      "worst_terminal_risk": 0.08419876802067464,
+      "sample_sd_terminal_risk": 0.0,
+      "profiles": [
+        {
+          "profile": "risk_max",
+          "terminal_risk": 0.08419876802067464,
+          "observed_prefix": [
+            "Ingress-002",
+            "Gateway-002"
+          ],
+          "foothold": "Gateway-002",
+          "replanned_path": [
+            "Gateway-002",
+            "Web-009",
+            "API-005",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [
+            "D04",
+            "D11"
+          ],
+          "response_cost": 4.0
+        },
+        {
+          "profile": "shortest_path",
+          "terminal_risk": 0.08419876802067464,
+          "observed_prefix": [
+            "Ingress-002",
+            "Gateway-002"
+          ],
+          "foothold": "Gateway-002",
+          "replanned_path": [
+            "Gateway-002",
+            "Web-009",
+            "API-005",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [
+            "D04",
+            "D11"
+          ],
+          "response_cost": 4.0
+        },
+        {
+          "profile": "asset_targeted",
+          "terminal_risk": 0.08419876802067464,
+          "observed_prefix": [
+            "Ingress-002",
+            "Gateway-002"
+          ],
+          "foothold": "Gateway-002",
+          "replanned_path": [
+            "Gateway-002",
+            "Web-009",
+            "API-005",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [
+            "D04",
+            "D11"
+          ],
+          "response_cost": 4.0
+        }
+      ]
+    },
+    {
+      "label": "static-score extension",
+      "initial_actions": [
+        "D01",
+        "D02",
+        "D08"
+      ],
+      "initial_cost": 4.0,
+      "static_network_risk": 0.7999453820644749,
+      "objective_J": 0.23151603221201242,
+      "mean_terminal_risk": 0.1877096858660435,
+      "worst_terminal_risk": 0.23946514478872793,
+      "sample_sd_terminal_risk": 0.08964308442313343,
+      "profiles": [
+        {
+          "profile": "risk_max",
+          "terminal_risk": 0.23946514478872793,
+          "observed_prefix": [
+            "Ingress-004",
+            "Gateway-001",
+            "Web-001"
+          ],
+          "foothold": "Web-001",
+          "replanned_path": [
+            "Web-001",
+            "API-001",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [],
+          "response_cost": 0.0
+        },
+        {
+          "profile": "shortest_path",
+          "terminal_risk": 0.08419876802067464,
+          "observed_prefix": [
+            "Ingress-002",
+            "Gateway-002"
+          ],
+          "foothold": "Gateway-002",
+          "replanned_path": [
+            "Gateway-002",
+            "Web-009",
+            "API-005",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [
+            "D04",
+            "D11"
+          ],
+          "response_cost": 4.0
+        },
+        {
+          "profile": "asset_targeted",
+          "terminal_risk": 0.23946514478872793,
+          "observed_prefix": [
+            "Ingress-004",
+            "Gateway-001",
+            "Web-001"
+          ],
+          "foothold": "Web-001",
+          "replanned_path": [
+            "Web-001",
+            "API-001",
+            "Service-001",
+            "Database-009"
+          ],
+          "response_actions": [],
+          "response_cost": 0.0
+        }
+      ]
+    }
+  ],
+  "comparison_note": "The +D01 portfolio is a feasible one-action extension used only as a local mechanism illustration; it is not the Static-CoDef search output.",
+  "primary_results_csv": {
+    "file": "chinanet_main_50_20seed_runs.csv",
+    "sha256": "602b307c7c820ce8c06a7b08c53f30a080aa378bbb36d605d52799976d25b5a7",
+    "methods": {
+      "PairStart-Greedy": {
+        "objective_J": 0.09539779499797417,
+        "initial_actions": [
+          "D06",
+          "D08"
+        ]
+      },
+      "CoDef": {
+        "objective_J": 0.08419876802067464,
+        "initial_actions": [
+          "D02",
+          "D08"
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "experiments/chinanet_paper_protocol.py": "28b675197b24f42e361e97b88690599b3f58ae328dd44bbf9280a73f168208a8",
+    "src/optimizer/attacker_uncertainty.py": "4e7282727e14b4abb3ce62f3316c23f98e05485430af618504f64ea407168f49",
+    "src/optimizer/two_stage.py": "170b907e8edefb142cdeb8380685c0682fe41cdf08093f8ba7e810f32590cdee",
+    "src/optimizer/robust_two_stage.py": "2229ac1cbe1bea15fefa37e14e1aab6d6b3a683e2e7a578c8a105179ac9c6f6f",
+    "src/graph/path_search.py": "b4256dfe26f1ad4bf65168a7738c55a09d21b10a0a035b8d998824c24b353bc3",
+    "src/risk/network_risk.py": "adfa7724624146249c2c6275f4f64df6c3739a2651e871e59e8667ce3d01abda",
+    "src/defense/apply_defense.py": "950e579d17bc3847dcdea9286a5dcc53ddc4d039e39bec5156e8e881d86d466b",
+    "src/simulator/scenario_variation.py": "7fabb171e7af6cb5c506aec41d6be63901da19b91f4e1b83a3723ac19c93896c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "experiment": "jisa_parameter_sensitivity_v1",
+  "passed": true,
+  "checks": {
+    "physical_rows_complete": true,
+    "unique_expected_keys": true,
+    "method_pairs_share_identical_inputs": true,
+    "finite_objectives_and_positive_runtimes": true,
+    "perturbation_factors_obey_protocol": true,
+    "base_reproduces_primary_objectives": true,
+    "protocol_source_hashes_match": true,
+    "primary_input_hash_matches_protocol": true,
+    "summary_matches_complete_raw_data": true,
+    "publication_summary_matches_complete_raw_data": true,
+    "protocol_declares_frozen_design": true
+  },
+  "raw_rows": 600,
+  "expected_rows": 600,
+  "base_primary_comparisons": 120,
+  "maximum_base_absolute_difference": 0.0,
+  "duplicate_keys": [],
+  "missing_key_count": 0,
+  "unexpected_key_count": 0,
+  "base_mismatches": [],
+  "paired_input_mismatch_count": 0,
+  "invalid_numeric_row_count": 0,
+  "out_of_range_factor_count": 0,
+  "source_hash_mismatches": [],
+  "primary_input_hash_matches": true,
+  "tolerance": 1e-08
+}

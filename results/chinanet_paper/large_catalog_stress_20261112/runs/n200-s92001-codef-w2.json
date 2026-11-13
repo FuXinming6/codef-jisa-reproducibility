@@ -1,0 +1,88 @@
+{
+  "job_id": "n200-s92001-codef-w2",
+  "method": "CoDef-W2",
+  "nodes": 200,
+  "edges": 404,
+  "seed": 92001,
+  "actions": 32,
+  "initial_actions": [
+    "E001"
+  ],
+  "objective": 0.26770483676478457,
+  "mean_terminal_risk": 0.17253352893859816,
+  "worst_terminal_risk": 0.3007932661572717,
+  "profile_evidence": [
+    {
+      "profile": "risk_max",
+      "terminal_risk": 0.3007932661572717,
+      "foothold": "Web-036",
+      "observed_path": [
+        "Ingress-009",
+        "Gateway-004",
+        "Web-036"
+      ],
+      "replanned_path": [
+        "Web-036",
+        "API-036",
+        "Service-036",
+        "Database-036"
+      ],
+      "response_actions": [
+        "I001"
+      ]
+    },
+    {
+      "profile": "shortest_path",
+      "terminal_risk": 0.0,
+      "foothold": "Gateway-004",
+      "observed_path": [
+        "Ingress-009",
+        "Gateway-004"
+      ],
+      "replanned_path": [],
+      "response_actions": [
+        "I007"
+      ]
+    },
+    {
+      "profile": "asset_targeted",
+      "terminal_risk": 0.21680732065852276,
+      "foothold": "Web-021",
+      "observed_path": [
+        "Ingress-005",
+        "Gateway-021",
+        "Web-021"
+      ],
+      "replanned_path": [
+        "Web-021",
+        "API-033",
+        "Service-033",
+        "Database-033"
+      ],
+      "response_actions": []
+    }
+  ],
+  "diagnostics": {
+    "profiles": [
+      "risk_max",
+      "shortest_path",
+      "asset_targeted"
+    ],
+    "profile_count": 3,
+    "worst_weight": 0.5,
+    "variation_weight": 0.2,
+    "response_pool_mode": "adaptive_diverse",
+    "response_scope": "local",
+    "replan_attacker": true,
+    "seeded_by_greedy": true,
+    "expanded_initial_candidates": 224,
+    "evaluated_initial_portfolios": 92,
+    "candidate_action_count": 32,
+    "max_action_candidates": null
+  },
+  "solver_wall_seconds": 32.1438348,
+  "process_cpu_seconds": 28.046875,
+  "graph_generator": "experiments.chinanet_paper_protocol.build_topology(hierarchical)",
+  "synthetic_security_annotations": true,
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

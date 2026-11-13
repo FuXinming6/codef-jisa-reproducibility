@@ -1,0 +1,379 @@
+{
+  "experiment": "jisa_parameter_sensitivity_v1",
+  "raw_rows": 600,
+  "expected_raw_rows": 600,
+  "tie_tolerance": 1e-12,
+  "within_method_change_metric": "absolute objective difference from the same graph's base condition; no denominator is used",
+  "conditions": {
+    "base": {
+      "n": 60,
+      "codef_lower_tied_higher": [
+        2,
+        57,
+        1
+      ],
+      "mean_delta_codef_minus_pairstart": -0.003099861667764785,
+      "median_delta_codef_minus_pairstart": 0.0,
+      "median_absolute_objective_change_vs_base": {
+        "CoDef": 0.0,
+        "PairStart-Greedy": 0.0
+      },
+      "mean_absolute_objective_change_vs_base": {
+        "CoDef": 0.0,
+        "PairStart-Greedy": 0.0
+      },
+      "families": {
+        "er_dag": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            20,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          }
+        },
+        "hierarchical": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            19,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": -0.0005599513488649767,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          }
+        },
+        "multipath": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            18,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": -0.008739633654429379,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          }
+        }
+      }
+    },
+    "cost_only": {
+      "n": 60,
+      "codef_lower_tied_higher": [
+        1,
+        58,
+        1
+      ],
+      "mean_delta_codef_minus_pairstart": 0.0002462179925986558,
+      "median_delta_codef_minus_pairstart": 0.0,
+      "median_absolute_objective_change_vs_base": {
+        "CoDef": 0.0,
+        "PairStart-Greedy": 0.0
+      },
+      "mean_absolute_objective_change_vs_base": {
+        "CoDef": 0.005057967477883916,
+        "PairStart-Greedy": 0.008208931869191057
+      },
+      "families": {
+        "er_dag": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            20,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.0019672628981417554,
+            "PairStart-Greedy": 0.0019672628981417554
+          }
+        },
+        "hierarchical": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            19,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": -0.000261952409117748,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.008944679345615898,
+            "PairStart-Greedy": 0.009002716345408694
+          }
+        },
+        "multipath": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            19,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0010006063869137153,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.004261960189894093,
+            "PairStart-Greedy": 0.013656816364022724
+          }
+        }
+      }
+    },
+    "effect_only": {
+      "n": 60,
+      "codef_lower_tied_higher": [
+        3,
+        56,
+        1
+      ],
+      "mean_delta_codef_minus_pairstart": -0.0026816952713129187,
+      "median_delta_codef_minus_pairstart": 0.0,
+      "median_absolute_objective_change_vs_base": {
+        "CoDef": 0.0004527004663729267,
+        "PairStart-Greedy": 0.0010700600566065158
+      },
+      "mean_absolute_objective_change_vs_base": {
+        "CoDef": 0.003934141724949921,
+        "PairStart-Greedy": 0.0040791975062559535
+      },
+      "families": {
+        "er_dag": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            20,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 7.640495907557457e-05,
+            "PairStart-Greedy": 7.640495907557457e-05
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.004151565051882087,
+            "PairStart-Greedy": 0.004151565051882087
+          }
+        },
+        "hierarchical": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            19,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": -0.00015028542614622595,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0039403730882795335,
+            "PairStart-Greedy": 0.0029579984489232387
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.006079650452268339,
+            "PairStart-Greedy": 0.0056699845295495885
+          }
+        },
+        "multipath": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            2,
+            17,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": -0.00789480038779253,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0,
+            "PairStart-Greedy": 0.0
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.0015712096706993355,
+            "PairStart-Greedy": 0.0024160429373361846
+          }
+        }
+      }
+    },
+    "asset_only": {
+      "n": 60,
+      "codef_lower_tied_higher": [
+        3,
+        55,
+        2
+      ],
+      "mean_delta_codef_minus_pairstart": -0.00045146582930796465,
+      "median_delta_codef_minus_pairstart": 0.0,
+      "median_absolute_objective_change_vs_base": {
+        "CoDef": 0.022497803039013553,
+        "PairStart-Greedy": 0.022497803039013553
+      },
+      "mean_absolute_objective_change_vs_base": {
+        "CoDef": 0.03071910285917883,
+        "PairStart-Greedy": 0.02948334038269678
+      },
+      "families": {
+        "er_dag": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            19,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": -0.0008281543220370835,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.0309071393152037,
+            "PairStart-Greedy": 0.0309071393152037
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.032297869118455017,
+            "PairStart-Greedy": 0.0331260234404921
+          }
+        },
+        "hierarchical": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            18,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": -8.943215599337765e-05,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.00956237022083236,
+            "PairStart-Greedy": 0.008529604359762771
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.016196037227168385,
+            "PairStart-Greedy": 0.015551124621933846
+          }
+        },
+        "multipath": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            18,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": -0.00043681100989343276,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.023405593132626565,
+            "PairStart-Greedy": 0.023405593132626565
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.04366340223191308,
+            "PairStart-Greedy": 0.03977287308566439
+          }
+        }
+      }
+    },
+    "joint": {
+      "n": 60,
+      "codef_lower_tied_higher": [
+        1,
+        57,
+        2
+      ],
+      "mean_delta_codef_minus_pairstart": -0.0007897879325481303,
+      "median_delta_codef_minus_pairstart": 0.0,
+      "median_absolute_objective_change_vs_base": {
+        "CoDef": 0.020539986222443574,
+        "PairStart-Greedy": 0.020539986222443574
+      },
+      "mean_absolute_objective_change_vs_base": {
+        "CoDef": 0.02710558011001457,
+        "PairStart-Greedy": 0.026749721872150783
+      },
+      "families": {
+        "er_dag": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            20,
+            0
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.013737415854699758,
+            "PairStart-Greedy": 0.013737415854699758
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.02769022658019119,
+            "PairStart-Greedy": 0.02769022658019119
+          }
+        },
+        "hierarchical": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            0,
+            19,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": 0.0037077051035811067,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.020680135897762034,
+            "PairStart-Greedy": 0.020680135897762034
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.027757454966819306,
+            "PairStart-Greedy": 0.026034948108198026
+          }
+        },
+        "multipath": {
+          "n": 20,
+          "codef_lower_tied_higher": [
+            1,
+            18,
+            1
+          ],
+          "mean_delta_codef_minus_pairstart": -0.006077068901225498,
+          "median_delta_codef_minus_pairstart": 0.0,
+          "median_absolute_objective_change_vs_base": {
+            "CoDef": 0.023661080422978445,
+            "PairStart-Greedy": 0.023661080422978445
+          },
+          "mean_absolute_objective_change_vs_base": {
+            "CoDef": 0.02586905878303322,
+            "PairStart-Greedy": 0.026523990928063138
+          }
+        }
+      }
+    }
+  }
+}

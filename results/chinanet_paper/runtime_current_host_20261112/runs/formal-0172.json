@@ -1,0 +1,86 @@
+{
+  "instance_id": "multipath-50-5349",
+  "family": "multipath",
+  "scale": 50,
+  "seed": 5349,
+  "input_path": "inputs/instances/multipath-50-5349.json",
+  "input_sha256": "ffee8b8de16d49e54528adac6005f17632a9de39a273ed688770c3b32424fc2f",
+  "method": "CoDef",
+  "repeat": 2,
+  "job_id": "formal-0172",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.2729410331733281,
+    "initial_actions": [
+      "D01",
+      "D09"
+    ],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.2729410331733281,
+        "foothold": "Web-007",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-007"
+        ],
+        "replanned_path": [
+          "Web-007",
+          "API-001",
+          "Service-002",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D04"
+        ]
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.2729410331733281,
+        "foothold": "Web-007",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-007"
+        ],
+        "replanned_path": [
+          "Web-007",
+          "API-001",
+          "Service-002",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D04"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.2729410331733281,
+        "foothold": "Web-007",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-007"
+        ],
+        "replanned_path": [
+          "Web-007",
+          "API-001",
+          "Service-002",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D04"
+        ]
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 5.6398289,
+  "process_cpu_seconds": 5.4375,
+  "worker_pid": 47064,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

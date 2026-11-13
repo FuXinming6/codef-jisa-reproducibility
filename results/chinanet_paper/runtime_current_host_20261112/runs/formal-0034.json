@@ -1,0 +1,72 @@
+{
+  "instance_id": "er_dag-50-5497",
+  "family": "er_dag",
+  "scale": 50,
+  "seed": 5497,
+  "input_path": "inputs/instances/er_dag-50-5497.json",
+  "input_sha256": "4bad6064a46aba08328b03c97542068263495454396d09afdfc130555650c21b",
+  "method": "PairStart-Greedy",
+  "repeat": 2,
+  "job_id": "formal-0034",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.6357548430914748,
+    "initial_actions": [
+      "D01",
+      "D02",
+      "D05"
+    ],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.6357548430914748,
+        "foothold": "Database-010",
+        "observed_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "replanned_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "response_actions": []
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.6357548430914748,
+        "foothold": "Database-010",
+        "observed_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "replanned_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "response_actions": []
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.6357548430914748,
+        "foothold": "Database-010",
+        "observed_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "replanned_path": [
+          "Ingress-003",
+          "Database-010"
+        ],
+        "response_actions": []
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 3.4198968,
+  "process_cpu_seconds": 3.21875,
+  "worker_pid": 28836,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

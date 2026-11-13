@@ -1,0 +1,13 @@
+{
+  "job_id": "n1000-s92038-codef-w2",
+  "nodes": 1000,
+  "actions": 100,
+  "seed": 92038,
+  "method": "CoDef-W2",
+  "status": "timeout_right_censored",
+  "end_to_end_wall_seconds": 135.0532305000088,
+  "process_cpu_seconds_sampled": 118.359375,
+  "peak_rss_mib_sampled": 52.1796875,
+  "deadline_seconds": 135.0,
+  "worker_return_code": 1
+}

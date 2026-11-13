@@ -1,0 +1,12 @@
+{
+  "instance_id": "hierarchical-50-5608",
+  "family": "hierarchical",
+  "scale": 50,
+  "seed": 5608,
+  "input_path": "inputs/instances/hierarchical-50-5608.json",
+  "input_sha256": "686581f833366bc617c4c8985bb04e715c341452c6841df0a600fc675ea2e3e9",
+  "method": "CoDef",
+  "repeat": 4,
+  "job_id": "formal-0045",
+  "mode": "formal"
+}

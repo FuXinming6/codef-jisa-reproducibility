@@ -1,0 +1,84 @@
+{
+  "instance_id": "hierarchical-50-5497",
+  "family": "hierarchical",
+  "scale": 50,
+  "seed": 5497,
+  "input_path": "inputs/instances/hierarchical-50-5497.json",
+  "input_sha256": "ba1fa4b6ef98625ce561defe5d9fcc2a1faca0f1185151da3ca4fc2415795198",
+  "method": "PairStart-Greedy",
+  "repeat": 4,
+  "job_id": "formal-0101",
+  "mode": "formal",
+  "current_result": {
+    "objective": 0.13208669512950671,
+    "initial_actions": [
+      "D06",
+      "D07"
+    ],
+    "profile_evidence": [
+      {
+        "profile": "risk_max",
+        "terminal_risk": 0.1366888528391359,
+        "foothold": "Web-002",
+        "observed_path": [
+          "Ingress-002",
+          "Gateway-002",
+          "Web-002"
+        ],
+        "replanned_path": [
+          "Web-002",
+          "API-001",
+          "Service-001",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D01"
+        ]
+      },
+      {
+        "profile": "shortest_path",
+        "terminal_risk": 0.08524762759676084,
+        "foothold": "Web-001",
+        "observed_path": [
+          "Ingress-002",
+          "Web-001"
+        ],
+        "replanned_path": [
+          "Web-001",
+          "API-003",
+          "Database-010"
+        ],
+        "response_actions": [
+          "D02"
+        ]
+      },
+      {
+        "profile": "asset_targeted",
+        "terminal_risk": 0.127577146364899,
+        "foothold": "Web-008",
+        "observed_path": [
+          "Ingress-003",
+          "Gateway-003",
+          "Web-008"
+        ],
+        "replanned_path": [
+          "Web-008",
+          "API-008",
+          "Service-008",
+          "Database-009"
+        ],
+        "response_actions": [
+          "D04"
+        ]
+      }
+    ]
+  },
+  "historical_match": true,
+  "wall_seconds": 1.971473,
+  "process_cpu_seconds": 1.9375,
+  "worker_pid": 45740,
+  "cpu_affinity": [
+    2
+  ],
+  "source_revision": "7f13e4c6b24ad88fa27c9774f8e1e33e4f377b1d"
+}

@@ -1,0 +1,7 @@
+{
+  "job_id": "n1000-s92038-codef-w2",
+  "nodes": 1000,
+  "actions": 100,
+  "seed": 92038,
+  "method": "CoDef-W2"
+}

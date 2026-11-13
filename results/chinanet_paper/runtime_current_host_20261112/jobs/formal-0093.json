@@ -1,0 +1,12 @@
+{
+  "instance_id": "er_dag-50-5904",
+  "family": "er_dag",
+  "scale": 50,
+  "seed": 5904,
+  "input_path": "inputs/instances/er_dag-50-5904.json",
+  "input_sha256": "9743b16a62a7e5f31dc05a50354ce8925c9015f49823d9731aef351b1221ab19",
+  "method": "CoDef",
+  "repeat": 2,
+  "job_id": "formal-0093",
+  "mode": "formal"
+}

@@ -1,0 +1,12 @@
+{
+  "instance_id": "hierarchical-50-5904",
+  "family": "hierarchical",
+  "scale": 50,
+  "seed": 5904,
+  "input_path": "inputs/instances/hierarchical-50-5904.json",
+  "input_sha256": "2376eeb9dafe6ef05ecf9840ccb9a0926c2e5d74472ce9c3c01c3c0d00930035",
+  "method": "PairStart-Greedy",
+  "repeat": 1,
+  "job_id": "formal-0004",
+  "mode": "formal"
+}
